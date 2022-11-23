@@ -5,15 +5,11 @@ Small library written for the purpose of performing actions on set intervals wit
 ActionifySharp is configurable (in theory) with any singleton service.
 ```cs
 IHostBuilder builder = Host.CreateDefaultBuilder(args);
-
-builder.ConfigureServices(services => 
-{
-    services.AddActionify();
-});
+builder.ConfigureServices(services => services.AddActionify());
+IHost host = builder.Build();
 
 /* "Actionify" here */
 
-IHost host = builder.Build();
 await host.RunAsync();
 
 ```

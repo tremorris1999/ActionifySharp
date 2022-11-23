@@ -45,7 +45,9 @@ public WorkerAction(string name, int interval, Action action)
 ```
 
 `name` is used for logging the execution of the action, maybe more to come.
+
 `interval` is the time between executions in seconds. A value of 60 would run each minute, while 3600 would run each hour, etc.
+
 `action` is the action delegate to be performed upon execution.
 
 ## Contribution
